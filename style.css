@@ -1,0 +1,498 @@
+/* ============================================================
+   style.css - Clean, Beginner-Friendly Portfolio Stylesheet
+   ============================================================ */
+
+/* 1. Global Reset & Box Sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* Smooth scrolling when clicking nav links */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #1e293b; /* Dark slate text for high contrast */
+  background-color: #f8fafc; /* Subtle off-white canvas */
+  line-height: 1.6;
+}
+
+/* 2. Layout Container */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 3. Sticky Navigation Header */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #475569;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #2563eb; /* Royal blue accent */
+}
+
+/* 4. Hero Section */
+.hero-section {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 80px 0;
+}
+
+.hero-content {
+  max-width: 750px;
+}
+
+.tagline {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2563eb;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.hero-section h1 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #0f172a;
+  margin-bottom: 16px;
+}
+
+.highlight {
+  color: #2563eb;
+}
+
+.lead-text {
+  font-size: 1.15rem;
+  color: #475569;
+  margin-bottom: 28px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-secondary {
+  background-color: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+
+.btn-secondary:hover {
+  background-color: #e2e8f0;
+}
+
+/* 5. General Section Styles */
+.section {
+  padding: 70px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.section-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.section-subtitle {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin-bottom: 32px;
+}
+
+/* About Content */
+.about-content p {
+  margin-bottom: 16px;
+  color: #334155;
+  font-size: 1.05rem;
+}
+
+/* 6. Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.skill-category {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.skill-category h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 8px;
+}
+
+.skill-list {
+  list-style: none;
+}
+
+.skill-list li {
+  padding: 6px 0;
+  color: #334155;
+  font-size: 0.95rem;
+  position: relative;
+  padding-left: 18px;
+}
+
+.skill-list li::before {
+  content: "•";
+  color: #2563eb;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* 7. Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #2563eb;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.project-card h3 {
+  font-size: 1.25rem;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.project-desc {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 16px;
+}
+
+.project-features {
+  list-style: disc;
+  padding-left: 20px;
+  font-size: 0.85rem;
+  color: #334155;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.project-features li {
+  margin-bottom: 6px;
+}
+
+.link-btn {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #2563eb;
+  transition: color 0.2s ease;
+}
+
+.link-btn:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+/* 8. Contact Section */
+.contact-section {
+  text-align: center;
+}
+
+.contact-box {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 40px 24px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.email-link {
+  display: inline-block;
+  margin: 16px 0 24px 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #2563eb;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.email-link:hover {
+  border-bottom-color: #2563eb;
+}
+
+.social-links {
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+.social-links a {
+  color: #334155;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.social-links a:hover {
+  color: #2563eb;
+}
+
+.divider {
+  margin: 0 10px;
+}
+
+/* 9. Footer */
+footer {
+  background-color: #ffffff;
+  padding: 30px 0;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-to-top {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+/* 10. Theme Toggle Button in Header */
+.theme-toggle {
+  background-color: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background-color: #e2e8f0;
+}
+
+/* 11. Dark Mode Styles (Activated by script.js) */
+body.dark-mode {
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+body.dark-mode header {
+  background-color: #1e293b;
+  border-bottom-color: #334155;
+}
+
+body.dark-mode .logo {
+  color: #ffffff;
+}
+
+body.dark-mode .nav-links a {
+  color: #94a3b8;
+}
+
+body.dark-mode .nav-links a:hover,
+body.dark-mode .nav-links a.active {
+  color: #60a5fa;
+}
+
+body.dark-mode .theme-toggle {
+  background-color: #334155;
+  color: #f8fafc;
+  border-color: #475569;
+}
+
+body.dark-mode .theme-toggle:hover {
+  background-color: #475569;
+}
+
+body.dark-mode .hero-section {
+  background-color: #1e293b;
+  border-bottom-color: #334155;
+}
+
+body.dark-mode .hero-section h1 {
+  color: #ffffff;
+}
+
+body.dark-mode .lead-text {
+  color: #94a3b8;
+}
+
+body.dark-mode .btn-secondary {
+  background-color: #334155;
+  color: #f8fafc;
+  border-color: #475569;
+}
+
+body.dark-mode .section {
+  border-bottom-color: #334155;
+}
+
+body.dark-mode .section-title {
+  color: #ffffff;
+}
+
+body.dark-mode .about-content p {
+  color: #cbd5e1;
+}
+
+body.dark-mode .skill-category,
+body.dark-mode .project-card,
+body.dark-mode .contact-box {
+  background-color: #1e293b;
+  border-color: #334155;
+}
+
+body.dark-mode .skill-category h3,
+body.dark-mode .project-card h3 {
+  color: #ffffff;
+}
+
+body.dark-mode .skill-list li,
+body.dark-mode .project-features li {
+  color: #cbd5e1;
+}
+
+body.dark-mode .footer {
+  background-color: #1e293b;
+  border-top-color: #334155;
+  color: #94a3b8;
+}
+
+/* 12. Floating Back-to-Top Button */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.2s ease;
+  z-index: 999;
+}
+
+.back-to-top-btn.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top-btn:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* 13. Mobile Responsiveness */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .nav-links {
+    gap: 16px;
+  }
+  .hero-section h1 {
+    font-size: 2.1rem;
+  }
+  .footer-content {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}

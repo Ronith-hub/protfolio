@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Ensures the website scales properly on mobile phones and tablets -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesu Ronith | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Jesu Ronith, a first-year Computer Science student.">
+
+  <!-- Link to external CSS stylesheet for styling and layout -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER & NAVIGATION BAR
+       Contains your name/logo and quick jump links to each section
+       ============================================================ -->
+  <header>
+    <div class="nav-container">
+      <!-- Your Name or Logo -->
+      <a href="#home" class="logo">Jesu Ronith</a>
+
+      <!-- Navigation Menu -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- (1) Dark Mode Toggle Button -->
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+        🌙 Dark Mode
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HERO / WELCOME SECTION (HOME)
+       A quick introduction to welcome visitors to your site
+       ============================================================ -->
+  <section id="home" class="hero-section">
+    <div class="container hero-content">
+      <p class="tagline">B.E.CSE Cyber Security &bull; Class of 2030</p>
+      <h1>Hello, I'm <span class="highlight">Jesu Ronith</span></h1>
+      <p class="lead-text">
+        A first-year student exploring computer science fundamentals, 
+        systems programming, and clean web development.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View My Projects</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+
+    <!-- ============================================================
+         ABOUT SECTION
+         Introduce yourself, your academic background, and interests
+         ============================================================ -->
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <p>
+          I am a first-year Computer Science &amp; Engineering student at 
+          <strong>Sathyabama University of Science and Tech</strong>. My interest in technology started with a 
+          curiosity about how code transforms into software that people use every day.
+        </p>
+        <p>
+          Currently, I am learning foundational languages like C++ and Python, studying 
+          data structures, and understanding how the command line and version control 
+          with Git work together.
+        </p>
+        <p>
+          Outside of my classes, I participate in our university ACM student chapter, 
+          practice algorithmic problem solving, and enjoy tinkering with small software tools.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SKILLS SECTION
+         List programming languages, tools, and topics you are learning
+         ============================================================ -->
+    <section id="skills" class="section">
+      <h2 class="section-title">Technical Skills</h2>
+      <p class="section-subtitle">Technologies and tools I practice with on a regular basis.</p>
+
+      <div class="skills-grid">
+        <!-- Skill Category 1: Languages -->
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <ul class="skill-list">
+            <li>C / C++</li>
+            <li>Python</li>
+            <li>HTML5 &amp; CSS3</li>
+            <li>JavaScript (ES6 Basics)</li>
+          </ul>
+        </div>
+
+        <!-- Skill Category 2: Fundamentals -->
+        <div class="skill-category">
+          <h3>CS Fundamentals</h3>
+          <ul class="skill-list">
+            <li>Object-Oriented Programming (OOP)</li>
+            <li>Basic Data Structures (Arrays, Lists)</li>
+            <li>Algorithm Complexity (Big-O Basics)</li>
+            <li>File Input &amp; Output</li>
+          </ul>
+        </div>
+
+        <!-- Skill Category 3: Tools -->
+        <div class="skill-category">
+          <h3>Developer Tools</h3>
+          <ul class="skill-list">
+            <li>Git &amp; GitHub</li>
+            <li>VS Code</li>
+            <li>Linux / Bash Terminal</li>
+            <li>GCC Compiler</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROJECTS SECTION
+         Showcase 3 beginner-friendly projects with descriptions & links
+         ============================================================ -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">Here are 3 projects I built during my first-year coursework and self-study.</p>
+
+      <div class="projects-grid">
+        <!-- Project Card 1: C++ Student Grade CLI -->
+        <article class="project-card">
+          <div class="project-badge">C++ &bull; Terminal</div>
+          <h3>Student Record Management System</h3>
+          <p class="project-desc">
+            A command-line program that allows teachers to record student grades, 
+            compute weighted GPAs, and save records to local text files.
+          </p>
+          <ul class="project-features">
+            <li>Stores student IDs, names, and test scores in modular structs</li>
+            <li>Saves and reads data from persistent disk files using fstream</li>
+            <li>Features input validation to prevent crashes from invalid input</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Ronith-hub/student-records" target="_blank" class="link-btn">View Code on GitHub &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Project Card 2: Campus Expense Tracker in Python -->
+        <article class="project-card">
+          <div class="project-badge">Python &bull; CLI</div>
+          <h3>Campus Expense &amp; Budget Tracker</h3>
+          <p class="project-desc">
+            A Python utility to log daily college spending (food, textbooks, transit) 
+            and export weekly categorized expenditure summaries to CSV.
+          </p>
+          <ul class="project-features">
+            <li>Parses command-line arguments using Python's standard library</li>
+            <li>Calculates category breakdowns and budget warning alerts</li>
+            <li>Exports clean CSV spreadsheets for simple budgeting</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Ronith-hub/expense-tracker" target="_blank" class="link-btn">View Code on GitHub &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Project Card 3: Personal Web Portfolio -->
+        <article class="project-card">
+          <div class="project-badge">HTML &bull; CSS &bull; JavaScript</div>
+          <h3>Personal Developer Portfolio</h3>
+          <p class="project-desc">
+            A responsive, accessible personal portfolio website built with clean 
+            semantic HTML, custom CSS styling, and interactive JavaScript.
+          </p>
+          <ul class="project-features">
+            <li>Semantic HTML5 layout with mobile-first responsive design</li>
+            <li>Smooth in-page scrolling and active navigation indicators</li>
+            <li>Hosted live and deployed on GitHub Pages</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Ronith-hub/Ronith-hub.github.io" target="_blank" class="link-btn">View Code on GitHub &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT SECTION
+         Provide your professional contact details and an email link
+         ============================================================ -->
+    <section id="contact" class="section contact-section">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">
+        I am currently looking for summer internship opportunities, 
+        undergraduate research, and hackathon teams. Feel free to reach out!
+      </p>
+
+      <div class="contact-box">
+        <p>The best way to reach me is directly by email:</p>
+        <!-- Replace with your actual email address -->
+        <a href="mailto:jesuroni7@gmail.com" class="email-link">jesuroni7@gmail.com</a>
+
+        <div class="social-links">
+          <a href="https://github.com/Ronith-hub" target="_blank">GitHub</a>
+          <span class="divider">&bull;</span>
+          <a href="https://linkedin.com/in/Jesu Ronith" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       Copyright notice and year
+       ============================================================ -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 Jesu Ronith. Built with clean HTML, CSS, and JavaScript.</p>
+      <a href="#home" class="back-to-top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <!-- (3) Floating Back-to-Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Scroll back to top" title="Back to top">
+    &uarr;
+  </button>
+
+  <!-- Link to the external JavaScript file before the closing body tag -->
+  <script src="script.js"></script>
+</body>
+</html>
