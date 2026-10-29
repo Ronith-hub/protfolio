@@ -1,4 +1,4 @@
-# Alex Morgan | Personal Developer Portfolio
+# Jesu Ronith | Personal Developer Portfolio
 
 > A modern, responsive personal developer portfolio website designed for a first-year Computer Science & Engineering undergraduate. Built with semantic HTML5, clean CSS3, and interactive vanilla JavaScript.
 
@@ -7,7 +7,7 @@
 ## 📌 Project Overview
 This repository hosts the source code for my personal developer portfolio. As a first-year CSE student at **State Institute of Technology**, I created this website to document my learning journey, showcase foundational programming projects, and provide a single hub for my technical profiles.
 
-- **Author:** Alex Morgan
+- **Author:** Jesu Ronith
 - **Course:** B.Tech in Computer Science & Engineering (1st Year)
 - **Institution:** State Institute of Technology
 - **Live Site:** [https://your-username.github.io/my-portfolio/](https://your-username.github.io/my-portfolio/)
